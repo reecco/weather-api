@@ -1,0 +1,102 @@
+@import '@/assets/sass/_variables.sass'
+  
+.about
+  min-height: 500px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  &-title
+    margin-top: 4%
+    font-size: $h1-size
+    font-weight: $h1-weight
+    text-align: center
+
+  &-text
+    margin-top: 2%
+    font-size: 1.2rem
+    text-align: center
+
+    .link
+      text-decoration: none
+      color: #000
+
+      &:hover
+        text-decoration: underline
+
+  &-box
+    margin-top: 5%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .box-title
+      font-size: $h3-size
+      font-weight: $h3-weight
+  
+    .link
+      margin-top: 20px
+
+      &-icon
+        width: 75px
+        height: 75px
+        transition: .5s
+        border-radius: 50%
+
+        &:hover
+          scale: 1.1
+
+@media (max-width: 359px)
+  .about
+
+    &-title
+      font-size: 1.7rem
+      min-height: 50px
+    
+    &-text
+      font-size: 1rem
+      min-height: 50px
+
+    &-box
+      min-height: 50px
+      .box-title
+        font-size: 1.4rem
+
+@media (min-width: 360px) and (max-width: 360px)
+  .about
+
+    &-title
+      font-size: 2rem
+      margin: 20px 0
+
+    &-text
+      font-size: 1.1rem
+      margin: 20px 0
+
+      .link
+        text-decoration: underline
+      
+@media (min-width: 361px) and (max-width: 414px)
+  .about
+
+    &-title
+      font-size: 2.2rem
+      margin: 20px 0
+    
+    &-text
+      font-size: 1.2rem
+      margin: 20px 0
+
+      .link
+        text-decoration: underline
+
+@media (min-width: 415px) and (max-width: 601px)
+  .about
+    &-title
+      margin: 20px 0
+    
+    &-text
+      margin: 20px 0
+
+      .link
+        text-decoration: underline

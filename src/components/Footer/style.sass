@@ -1,0 +1,39 @@
+@import '@/assets/sass/_variables.sass'
+
+div
+  background-color: $bg-color-main
+  .footer
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    min-height: 300px
+    &-text
+      text-align: center
+      font-size: 1.1rem
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 10px
+
+      .icon
+        margin-left: 10px
+        width: 20px
+        height: 20px
+
+@media (max-width: 360px)
+  div
+    .footer
+      display: flex
+      justify-content: flex-end
+      flex-direction: column
+      min-height: 200px
+
+      &-text
+        font-size: 1rem
+        margin-bottom: 5px
+
+@media (min-width: 361px) and (max-width: 414px)
+  div
+    .footer
+      &-text
+        font-size: 1.1rem

@@ -1,0 +1,121 @@
+div
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 20px
+  background-color: #342d2d
+
+  .logo
+    &-image
+      width: 40px
+      height: 40px
+      background-image: url('@/assets/images/weather-logo.png')
+      background-repeat: no-repeat
+      background-size: 100%
+      background-position: center
+      border-radius: 50%
+
+    &-title
+      margin-left: 10px
+      font-size: 2rem
+      color: #FEFEFE
+      font-style: italic
+      font-weight: 600
+      text-decoration: none
+      &:hover
+        opacity: 1
+
+  .nav
+    display: flex
+    justify-content: center
+
+    &-link
+      margin: 20px
+      font-size: 1.2rem
+      text-decoration: none
+      color: #FEFEFE
+
+      &:hover
+        opacity: 0.5
+
+  .menu
+    display: none
+
+.nav-collapse
+  display: none
+
+@media (max-width: 359px)
+  div
+    display: flex
+    justify-content: space-around
+    padding: 10px 0
+    
+    .nav
+      display: none
+      width: 50px
+      height: 50px
+
+    .menu
+      display: block  
+      width: 30px
+      height: 30px
+      background-color: #342d2d
+      border: none
+      color: #FEFEFE
+      font-size: 25px
+
+  .nav-collapse
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    width: 100%
+    height: 4vh
+    top: -100vh
+    transition: .5s
+    background: rgba(0,0,0,0)
+    
+    .link
+      color: #FEFEFE
+      text-decoration: none
+        
+  .nav-collapse--active
+    background-color: #342d2d
+    top: 15vh
+    transition: .5s
+
+    .link
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+@media (min-width: 360px) and (max-width: 360px)
+  div
+    justify-content: space-around
+    .logo
+      &-image
+        width: 30px
+        height: 30px
+        border-radius: 50%
+
+      &-title
+        font-size: 1.5rem
+
+@media (min-width: 361px) and (max-width: 414px)
+  div
+    justify-content: space-around
+    .logo
+
+      &-title
+        font-size: 1.5rem
+
+@media (min-width: 415px) and (max-width: 601px)
+  div
+    justify-content: space-between
+    .logo
+      &-image
+        width: 50px
+        height: 50px
+
+      &-title
+        font-size: 1.7rem

@@ -1,0 +1,163 @@
+@import '@/assets/sass/_variables.sass'
+
+.result
+  background-color: $bg-color-main
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  min-height: 200px
+
+  &-infos__title
+    font-size: $h3-size
+    font-weight: $h3-weight
+    text-align: center
+
+  &-infos__sky
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .title-sky
+      font-size: $h4-size
+      font-weight: $h4-weight
+      margin: 10px
+
+    .title-sky::first-letter
+      text-transform: uppercase
+
+    .sky-icon
+      background-color: #FEFE
+      border-radius: 10px
+      border: 1px solid #000
+      width: 50px
+      height: 50px
+
+  &-infos__temp
+    display: flex
+    justify-content: center
+    text-align: center
+
+    .infos
+      margin: 30px
+
+      &-box
+        display: flex
+        align-items: center
+
+        .category
+          font-size: $lbl-content-size
+
+        .fa
+          margin: 5px
+
+      .temp
+        margin-top: 10px
+        font-size: $p-size
+
+  &-infos__others
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .infos-sun
+      display: flex
+      justify-content: space-between
+
+      .sun
+        margin: 20px
+
+        .box
+          display: flex
+          align-items: center
+
+          &-title
+            font-size: $lbl-content-size
+
+          &-icon
+            width: 20px
+            height: 20px
+            margin: 5px
+
+          .sunrise
+            background-image: url('@/assets/images/sunrise.png')
+            background-size: 100%
+            background-repeat: no-repeat
+            background-position: center
+
+          .sunset
+            background-image: url('@/assets/images/sunset.png')
+            background-size: 100%
+            background-repeat: no-repeat
+            background-position: center
+
+        &-text
+          font-size: $p-size
+
+    .infos__air
+      .air-humidity
+        .box
+          display: flex
+          align-items: center
+
+          &-title
+            font-size: $lbl-content-size
+
+          &-icon
+            width: 20px
+            height: 20px
+            margin: 5px
+
+          .humidity
+            background-image: url('@/assets/images/humidity.png')
+            background-size: 100%
+            background-repeat: no-repeat
+            background-position: center
+
+  &-infos__local
+    display: flex
+    justify-content: space-around
+
+    .coord
+      margin: 20px
+      text-align: center
+
+      &-title
+        font-size: $lbl-content-size
+
+      &-value
+        margin-top: 5px
+        font-size: $p-size
+
+@media (max-width: 359px)
+  .result
+    &-infos__title
+      font-size: 1.2rem
+
+    &-infos__sky
+      .title-sky
+        font-size: 1rem
+
+      .sky-icon
+        width: 30px
+        height: 30px
+
+    &-infos__temp
+    .infos
+      margin: 10px
+
+    &-infos__others
+      .infos-sun
+        .sun
+          margin: 1px
+
+@media (min-width: 360px) and (max-width: 360px)
+  .result
+
+    &-infos__title
+      font-size: 1.3rem
+
+@media (min-width: 361px) and (max-width: 414px)
+  .result
+    &-infos__title
+      font-size: 1.4rem

@@ -1,0 +1,102 @@
+@import '@/assets/sass/_variables.sass'
+
+.home
+  background-color: $bg-color-main
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  min-height: 500px
+  margin: 0 auto
+
+  &-title
+    margin-top: 4%
+    font-size: $h1-size
+    font-weight: $h1-weight
+
+  &-form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 300px
+
+    .city
+      text-align: center
+      font-size: 1.6rem
+      border-radius: 10px
+      margin-bottom: 5%
+
+    .message__form
+      font-size: 1rem
+      color: #dc3545
+      height: 1.5rem
+
+    .message__form::first-letter
+      text-transform: uppercase
+
+    #city
+      margin-top: 5px
+      height: 50px
+      font-size: 1.5rem
+      text-align: center
+      border: 1px solid #000
+      border-radius: 12px
+      background-color: #FEFE
+
+      &:focus
+        outline-color: #6a6262
+
+    .btn-send
+      margin-top: 15px
+      background-color:
+      height: 40px
+      font-size: 1.4rem
+      border: 1px solid #000
+      border-radius: 12px
+      background-color: #343a40
+      color: #FEFEFE
+
+      &:hover
+        cursor: pointer
+
+      &:active
+        background-color: #242729
+
+      .fa
+        color: #FEFE
+        font-size: 1.5rem
+
+@media (max-width: 359px)
+  .home
+
+    &-title
+      font-size: 1.7rem
+    
+    &-form
+      width: 70%
+
+@media (min-width: 360px) and (max-width: 360px)
+  .home
+    margin-top: 5%
+
+    &-title
+      font-size: 2rem
+
+    &-form
+      min-height: 200px
+
+      .city
+        font-size: 1.4rem
+
+@media (min-width: 361px) and (max-width: 414px)
+  .home
+    margin-top: 5%
+
+    &-title
+      font-size: 2.1rem
+
+    &-form
+      min-height: 200px
+
+      .city
+        font-size: 1.6rem
